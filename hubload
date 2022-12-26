@@ -39,6 +39,20 @@ DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 end)
 
+local btns = serv:Channel("Islands")
+
+btns:Button("Teleport Bypass (Execute First)", function()
+DiscordLib:Notification("Notification", "Teleport Bypassed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/samuelLovesPie/verm_releases/main/IslandsTPBypass.lua"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Islands Script", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/uzu01/public/main/loader.lua"))()
+end)
+
 local btns = serv:Channel("Phantom Forces (Use Alt)")
 
 btns:Button("Phantom Forces Script", function()
@@ -73,6 +87,93 @@ local btns = serv:Channel("Big Paintball")
 btns:Button("Big Paintball Script", function()
 DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+local btns = serv:Channel("Tapping Simulator")
+
+btns:Button("Tapping Simulator Script", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JellyBagBeans/CelestialHub/main/GameLoader"))()
+end)
+
+local btns = serv:Channel("Ball and Axe")
+
+btns:Button("Auto Win Script", function()
+DiscordLib:Notification("Notification", "Won :)!", "Woohoo🎉!")
+getyourname = game.Players.LocalPlayer.Character.Name 
+Game:GetService("Workspace").playerModels[getyourname].ball.CFrame = CFrame.new(-109.874924, 513.699951, 0.574999571, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.1)
+Game:GetService("Workspace").playerModels[getyourname].ball.CFrame = CFrame.new(-109.874924, 513.699951, 0.574999571, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.1)
+Game:GetService("Workspace").playerModels[getyourname].ball.CFrame = CFrame.new(-109.874924, 513.699951, 0.574999571, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.1)
+Game:GetService("Workspace").playerModels[getyourname].ball.CFrame = CFrame.new(-109.874924, 513.699951, 0.574999571, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.1)
+Game:GetService("Workspace").playerModels[getyourname].ball.CFrame = CFrame.new(-109.874924, 513.699951, 0.574999571, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.1)
+Game:GetService("Workspace").playerModels[getyourname].ball.CFrame = CFrame.new(-109.874924, 513.699951, 0.574999571, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.1)
+end)
+
+local btns = serv:Channel("Destruction Simulator")
+
+btns:Button("Destruction Simulator Script", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Robobo2022/script/main/Main.lua"), true))()
+end)
+
+local btns = serv:Channel("Space Tycoon")
+
+btns:Button("Space Tycoon Script", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet("https://jumblescripts.com/SpaceTycoon.lua"))()
+end)
+
+local btns = serv:Channel("Evade")
+
+btns:Button("Evade Script", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DEV-TK02/StrikeHubV2/main/Loader', true))()
+end)
+
+local btns = serv:Channel("Car Dealership Tycoon")
+
+btns:Button("Car Dealership Tycoon Script", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0carsanta", true))()
+end)
+
+local btns = serv:Channel("Clicker Madness")
+
+btns:Button("Fast AutoClicker", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+getgenv().autoTap = true;
+
+local remotePath = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices
+
+spawn(function ()  
+    while autoTap == true do
+       local args = {[1] = 1}
+       remotePath.ClickService.Click:FireServer(unpack(args))
+       wait()
+    end
+end)
+end)
+
+local btns = serv:Channel("50/50 Pick A Door Obby")
+
+btns:Button("Win GUI", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet("https://gist.githubusercontent.com/RavyarTheBest/b3cdaf4b236b4cbc3e0461c84a9330aa/raw/78725e9e973b3396025a5e0cd0fa24b015e7006e/gistfile1.txt"))()
+end)
+
+local btns = serv:Channel("Dunking Simulator")
+
+btns:Button("Auto Dunk", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+while wait(2) do
+game:GetService("ReplicatedStorage").Remotes.DunkRequest:FireServer()
+end
 end)
 
 serv:Channel("by Reassignment#3642")
