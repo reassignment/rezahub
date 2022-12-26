@@ -1,108 +1,89 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
+
+local notif = Notification.new("success", "Success", "Success body message.")
+notif:changeHeading("New Heading") -- Args(<string> NewHeading)
+notif:changeBody("New Body") -- Args(<string> NewBody)
+notif:deleteTimeout(3) -- Args(<number> DeleteWaitTime)
+notif:delete()
 _G.Config = { ["Theme"] = "Discord" }
 local Nord = loadstring(game:HttpGetAsync("https://scripts.nord.vip/NordNotifs.lua", true))();
 
 local win = DiscordLib:Window("Reezi Hub")
 
-local serv = win:Server("Games", "http://www.roblox.com/asset/?id=6031075938")
-
 local btns = serv:Channel("Blox Fruits")
 
 btns:Button("New Blox Fruits Script", function()
-Nord:Notify(nil, "New Blox Fruits Loaded!", "success", 3);
+Notification.new("success", "Success Heading", "Success body message.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+Nord:Notify(nil, "Script Executed!", "success", 3);
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader'))()
 end)
 
 btns:Seperator()
-
 btns:Button("Chest Autofarm", function()
-Nord:Notify(nil, "Blox Fruits Chest Farm Loaded!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed", "Okay!")
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/bfbelifarm', true))()
 end)
-
 btns:Seperator()
-
 btns:Button("Old Blox Fruits Script (Works)", function()
-Nord:Notify(nil, "Old Blox Fruits Loaded!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Corrupt2625/pjv/main/Loader.lua"))()
 end)
-
 local btns = serv:Channel("Bedwars (Use Alt)")
-
 btns:Button("Bedwars Script", function()
-Nord:Notify(nil, "Vape V4 Injected!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
 end)
-
 local btns = serv:Channel("Arsenal")
-
 btns:Button("Arsenal Script", function()
-Nord:Notify(nil, "Arsenal GUI Loaded!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 end)
-
 local btns = serv:Channel("Islands")
-
 btns:Button("Teleport Bypass (Execute First)", function()
-Nord:Notify(nil, "Teleport Anticheat Has Been Bypassed!", "success" 3)
+DiscordLib:Notification("Notification", "Teleport Bypassed!", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/samuelLovesPie/verm_releases/main/IslandsTPBypass.lua"))()
 end)
-
 btns:Seperator()
-
 btns:Button("Islands Script", function()
-Nord:Notify(nil, "Islands GUI Loaded!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/uzu01/public/main/loader.lua"))()
 end)
-
 local btns = serv:Channel("Phantom Forces (Use Alt)")
-
 btns:Button("Phantom Forces Script", function()
-Nord:Notify(nil, "Phantom Forces GUI Loaded!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 getgenv().targetedPart = "Head";
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Spoorloos/scripts/main/silent_aim_v2.lua"))();
 end)
-
 local btns = serv:Channel("World // Zero")
-
 btns:Button("World // Zero Script", function()
-Nord:Notify(nil, "World // Zero GUI Loaded!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/HeiKe2022/wz-v1.8/main/wz1.8-WarLord.lua"))()
 end)
-
 local btns = serv:Channel("Murder Mystery 2")
-
 btns:Button("Murder Mystery 2 Script", function()
-Nord:Notify(nil, "Murder Mystery 2 GUI Loaded!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet('https://scripts.luawl.com/Main/Scourge.lua'))()
 end)
-
 local btns = serv:Channel("Mining Simulator 2")
-
 btns:Button("Mining Simulator 2 Script", function()
-Nord:Notify(nil, "Mining Simulator 2 GUI Loaded!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JellyBagBeans/CelestialHub/main/GameLoader"))()
 end)
-
 local btns = serv:Channel("Big Paintball")
-
 btns:Button("Big Paintball Script", function()
-Nord:Notify(nil, "Big Paintball GUI Loaded!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
 end)
-
 local btns = serv:Channel("Tapping Simulator")
-
 btns:Button("Tapping Simulator Script", function()
-Nord:Notify(nil, "Tapping Simulator GUI Loaded!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JellyBagBeans/CelestialHub/main/GameLoader"))()
 end)
-
 local btns = serv:Channel("Ball and Axe")
-
 btns:Button("Auto Win Script", function()
-Nord:Notify(nil, "You won🥳🎉!", "success" 3)
+DiscordLib:Notification("Notification", "Won :)!", "Woohoo🎉!")
 getyourname = game.Players.LocalPlayer.Character.Name 
 Game:GetService("Workspace").playerModels[getyourname].ball.CFrame = CFrame.new(-109.874924, 513.699951, 0.574999571, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 wait(0.1)
@@ -117,43 +98,31 @@ wait(0.1)
 Game:GetService("Workspace").playerModels[getyourname].ball.CFrame = CFrame.new(-109.874924, 513.699951, 0.574999571, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 wait(0.1)
 end)
-
 local btns = serv:Channel("Destruction Simulator")
-
 btns:Button("Destruction Simulator Script", function()
-Nord:Notify(nil, "Destruction Simulator GUI Loaded! (Dead Game)", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Robobo2022/script/main/Main.lua"), true))()
 end)
-
 local btns = serv:Channel("Space Tycoon")
-
 btns:Button("Space Tycoon Script", function()
-Nord:Notify(nil, "Space Tycoon GUI Loaded!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://jumblescripts.com/SpaceTycoon.lua"))()
 end)
-
 local btns = serv:Channel("Evade")
-
 btns:Button("Evade Script", function()
-Nord:Notify(nil, "Evade GUI Loaded!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet('https://raw.githubusercontent.com/DEV-TK02/StrikeHubV2/main/Loader', true))()
 end)
-
 local btns = serv:Channel("Car Dealership Tycoon")
-
 btns:Button("Car Dealership Tycoon Script", function()
-Nord:Notify(nil, "Car Dealership Tycoon GUI Loaded!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0carsanta", true))()
 end)
-
 local btns = serv:Channel("Clicker Madness")
-
 btns:Button("Fast AutoClicker", function()
-Nord:Notify(nil, "Fast AutoClicker Enabled!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 getgenv().autoTap = true;
-
 local remotePath = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices
-
 spawn(function ()  
     while autoTap == true do
        local args = {[1] = 1}
@@ -162,23 +131,17 @@ spawn(function ()
     end
 end)
 end)
-
 local btns = serv:Channel("50/50 Pick A Door Obby")
-
 btns:Button("Win GUI", function()
-Nord:Notify(nil, "Win GUI Loaded!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 loadstring(game:HttpGet("https://gist.githubusercontent.com/RavyarTheBest/b3cdaf4b236b4cbc3e0461c84a9330aa/raw/78725e9e973b3396025a5e0cd0fa24b015e7006e/gistfile1.txt"))()
 end)
-
 local btns = serv:Channel("Dunking Simulator")
-
 btns:Button("Auto Dunk", function()
-Nord:Notify(nil, "Auto Dunk Enabled!", "success" 3)
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
 while wait(2) do
 game:GetService("ReplicatedStorage").Remotes.DunkRequest:FireServer()
 end
 end)
-
 local lbls = serv:Channel("by Reassignment#3642")
-
 lbls:Label("This hub has 18 Scripts!")
