@@ -6,15 +6,23 @@ local serv = win:Server("Games", "http://www.roblox.com/asset/?id=6031075938")
 
 local btns = serv:Channel("Blox Fruits")
 
-btns:Button("Blox Fruits Script", function()
-DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Corrupt2625/pjv/main/Loader.lua"))()
+btns:Button("New Blox Fruits Script", function()
+DiscordLib:Notification("Notification", "Script Executed", "Okay!")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader'))()
 end)
 
 btns:Seperator()
 
-btns:Button("Notification Test", function()
-DiscordLib:Notification("Notification", "Works", "Okay!")
+btns:Button("Chest Autofarm", function()
+DiscordLib:Notification("Notification", "Script Executed", "Okay!")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/bfbelifarm', true))()
+end)
+
+btns:Seperator()
+
+btns:Button("Old Blox Fruits Script (Works)", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Corrupt2625/pjv/main/Loader.lua"))()
 end)
 
 local btns = serv:Channel("Bedwars (Use Alt)")
