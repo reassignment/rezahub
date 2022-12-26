@@ -179,3 +179,9 @@ end)
 local lbls = serv:Channel("by Reassignment#3642")
 
 lbls:Label("This hub has 18 Scripts!")
+
+btns:Seperator()
+
+lbls:Button("Destroy GUI", function()
+win:Destroy()
+end)
