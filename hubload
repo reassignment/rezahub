@@ -1,0 +1,70 @@
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("Reezi Hub")
+
+local serv = win:Server("Games", "http://www.roblox.com/asset/?id=6031075938")
+
+local btns = serv:Channel("Blox Fruits")
+
+btns:Button("Blox Fruits Script", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Corrupt2625/pjv/main/Loader.lua"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Notification Test", function()
+DiscordLib:Notification("Notification", "Works", "Okay!")
+end)
+
+local btns = serv:Channel("Bedwars (Use Alt)")
+
+btns:Button("Bedwars Script", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+local btns = serv:Channel("Arsenal")
+
+btns:Button("Arsenal Script", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+local btns = serv:Channel("Phantom Forces (Use Alt)")
+
+btns:Button("Phantom Forces Script", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+getgenv().targetedPart = "Head";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Spoorloos/scripts/main/silent_aim_v2.lua"))();
+end)
+
+local btns = serv:Channel("World // Zero")
+
+btns:Button("World // Zero Script", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeiKe2022/wz-v1.8/main/wz1.8-WarLord.lua"))()
+end)
+
+local btns = serv:Channel("Murder Mystery 2")
+
+btns:Button("Murder Mystery 2 Script", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet('https://scripts.luawl.com/Main/Scourge.lua'))()
+end)
+
+local btns = serv:Channel("Mining Simulator 2")
+
+btns:Button("Mining Simulator 2 Script", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JellyBagBeans/CelestialHub/main/GameLoader"))()
+end)
+
+local btns = serv:Channel("Big Paintball")
+
+btns:Button("Big Paintball Script", function()
+DiscordLib:Notification("Notification", "Script Executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+serv:Channel("by Reassignment#3642")
