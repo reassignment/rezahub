@@ -351,3 +351,17 @@ section:Create(
         text = "Reassignment#3642"
     }
 )
+
+section:Create(
+    "KeyBind",
+    "Hide/Unhide GUI", 
+    function()
+        if Main.Motherframe.Visibility == true then
+	    Main.Motherframe.Visibility = false
+	elseif Main.Motherframe.Visibility == false then
+	    Main.Motherframe.Visibility = true
+    end,
+    {
+        default = Enum.KeyCode.Insert
+    }
+)
