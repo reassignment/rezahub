@@ -176,4 +176,6 @@ game:GetService("ReplicatedStorage").Remotes.DunkRequest:FireServer()
 end
 end)
 
-serv:Channel("by Reassignment#3642")
+local lbls = serv:Channel("by Reassignment#3642")
+
+lbls:Label("This hub has 18 Scripts!")
