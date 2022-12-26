@@ -1,0 +1,353 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/teppyboy/RbxScripts/master/Misc/UI_Libraries/Zypher/Library.lua"))()
+
+local main = library:CreateMain({
+    projName = "Reezi Hub",
+    Resizable = true,
+    MinSize = UDim2.new(0,400,0,400),
+    MaxSize = UDim2.new(0,750,0,500),
+})
+
+local category = main:CreateCategory("Blox Fruits")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "GUI (New)",
+    function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader'))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+section:Create(
+    "Button",
+    "GUI (Old)",
+    function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/bfbelifarm', true))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local section = category:CreateSection("Chest Farm")
+
+section:Create(
+    "Button",
+    "Chest Farm",
+    function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/bfbelifarm', true))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Bedwars")
+
+local section = category:CreateSection("Vape")
+
+section:Create(
+    "Button",
+    "Vape V4",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Arsenal")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Arsenal GUI",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Islands")
+
+local section = category:CreateSection("Teleport Bypass")
+
+section:Create(
+    "Button",
+    "Execute First",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/samuelLovesPie/verm_releases/main/IslandsTPBypass.lua"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Islands GUI",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/uzu01/public/main/loader.lua"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Phantom Forces")
+
+local section = category:CreateSection("Silent Aim")
+
+section:Create(
+    "Button",
+    "Use An Alt",
+    function()
+        getgenv().targetedPart = "Head";
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Spoorloos/scripts/main/silent_aim_v2.lua"))();
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("World // Zero")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "World // Zero GUI",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/HeiKe2022/wz-v1.8/main/wz1.8-WarLord.lua"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Murder Mystery 2")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Murder Mystery 2 GUI",
+    function()
+        loadstring(game:HttpGet("https://scripts.luawl.com/Main/Scourge.lua"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Mining Simulator 2")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Mining Simulator 2 GUI",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JellyBagBeans/CelestialHub/main/GameLoader"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Big Paintball")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Big Paintball GUI",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Tapping Simulator")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Tapping Simulator GUI",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JellyBagBeans/CelestialHub/main/GameLoader"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Ball and Axe")
+
+local section = category:CreateSection("Auto Win")
+
+section:Create(
+    "Button",
+    "Click To Win",
+    function()
+        getyourname = game.Players.LocalPlayer.Character.Name 
+        Game:GetService("Workspace").playerModels[getyourname].ball.CFrame = CFrame.new(-109.874924, 513.699951, 0.574999571, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        wait(0.1)
+        Game:GetService("Workspace").playerModels[getyourname].ball.CFrame = CFrame.new(-109.874924, 513.699951, 0.574999571, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        wait(0.1)
+        Game:GetService("Workspace").playerModels[getyourname].ball.CFrame = CFrame.new(-109.874924, 513.699951, 0.574999571, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        wait(0.1)
+        Game:GetService("Workspace").playerModels[getyourname].ball.CFrame = CFrame.new(-109.874924, 513.699951, 0.574999571, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        wait(0.1)
+        Game:GetService("Workspace").playerModels[getyourname].ball.CFrame = CFrame.new(-109.874924, 513.699951, 0.574999571, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        wait(0.1)
+        Game:GetService("Workspace").playerModels[getyourname].ball.CFrame = CFrame.new(-109.874924, 513.699951, 0.574999571, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+        wait(0.1)
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Destruction Simulator")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Destruction Simulator GUI",
+    function()
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/Robobo2022/script/main/Main.lua"), true))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Space Tycoon")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Space Tycoon GUI",
+    function()
+        loadstring(game:HttpGet("https://jumblescripts.com/SpaceTycoon.lua"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Evade")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Evade GUI",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DEV-TK02/StrikeHubV2/main/Loader"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Car Dealership Tycoon")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Car Dealership Tycoon GUI",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0carsanta", true))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Clicker Madness")
+
+local section = category:CreateSection("Autoclicker")
+
+section:Create(
+    "Button",
+    "Fast AutoClicker",
+    function()
+        getgenv().autoTap = true;
+		local remotePath = game:GetService("ReplicatedStorage").Aero.AeroRemoteServices
+		spawn(function ()  
+    		while autoTap == true do
+       			local args = {[1] = 1}
+       			remotePath.ClickService.Click:FireServer(unpack(args))
+       			wait()
+    		end
+		end)
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("50/50 Pick A Door Obby")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Win GUI",
+    function()
+        loadstring(game:HttpGet("https://gist.githubusercontent.com/RavyarTheBest/b3cdaf4b236b4cbc3e0461c84a9330aa/raw/78725e9e973b3396025a5e0cd0fa24b015e7006e/gistfile1.txt"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Dunking Simulator")
+
+local section = category:CreateSection("Auto Dunk")
+
+section:Create(
+    "Button",
+    "Auto Dunk",
+    function()
+        while wait(2) do
+		game:GetService("ReplicatedStorage").Remotes.DunkRequest:FireServer()
+		end
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Credits")
+
+local section = category:CreateSection("Credits")
+
+section:Create(
+    "TextBox",
+    "Created By",
+    function(input)
+        
+    end,
+    {
+        text = "Reassignment#3642"
+    }
+)
