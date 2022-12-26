@@ -1,12 +1,7 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
-local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
-
-local notif = Notification.new("success", "Success", "Success body message.")
-notif:changeHeading("New Heading") -- Args(<string> NewHeading)
-notif:changeBody("New Body") -- Args(<string> NewBody)
-notif:deleteTimeout(3) -- Args(<number> DeleteWaitTime)
-notif:delete()
+_G.Config = { ["Theme"] = "Discord" }
+local Nord = loadstring(game:HttpGetAsync("https://scripts.nord.vip/NordNotifs.lua", true))();
 
 local win = DiscordLib:Window("Reezi Hub")
 
@@ -15,7 +10,7 @@ local serv = win:Server("Games", "http://www.roblox.com/asset/?id=6031075938")
 local btns = serv:Channel("Blox Fruits")
 
 btns:Button("New Blox Fruits Script", function()
-Notification.new("success", "Success Heading", "Success body message.") -- Args(<string> Type, <string> Heading, <string> Body, <boolean?> AutoRemoveNotif, <number?> AutoRemoveTime, <function?> OnCloseFunction)
+Nord:Notify(nil, "Script Executed!", "success", 3);
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader'))()
 end)
 
