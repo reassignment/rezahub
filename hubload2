@@ -106,6 +106,19 @@ section:Create(
 
 local category = main:CreateCategory("Phantom Forces")
 
+local section = category:CreateSection("Anticheat Bypass")
+
+section:Create(
+    "Button",
+    "Execute First",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Spoorloos/scripts/main/pf-actor-bypass.lua"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
 local section = category:CreateSection("Silent Aim")
 
 section:Create(
