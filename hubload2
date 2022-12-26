@@ -350,6 +350,85 @@ section:Create(
     }
 )
 
+local category = main:CreateCategory("Ultra Clickers Simulator")
+
+local section = category:CreateSection("AutoClick")
+
+section:Create(
+    "Button",
+    "AutoClick",
+    function()
+        getfenv().Clicks = true -- or false
+        while getfenv().Clicks do
+        local Event = game:GetService("Workspace").Events.AddClick
+        Event:FireServer()
+        wait()
+        end
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Weight Lifting Sim 3")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Weight Lifting Sim 3 GUI",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceCat1748/Boblox/main/training.lua"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Broken Bones 5")
+
+local section = category:CreateSection("Overpowered")
+
+section:Create(
+    "Button",
+    "Infinite Money and Fast XP",
+    function()
+        local FinishRun = game:GetService('ReplicatedStorage').Functions.FinishRun
+
+        local namecall; namecall = hookmetamethod(game, '__namecall', function(caller, ...)
+           local args = {...}
+           local method = getnamecallmethod()
+
+           if not checkcaller() and caller == FinishRun and method == 'InvokeServer' then
+        args[2][1] = 1000 -- breaks
+        args[2][2] = 1000 -- sprains
+        args[2][3] = 100 -- dislocations
+        args[2][8]['Breaks'] = 0xFFFFFFFFFFFFFFFF -- math.huge breaks this script
+           end
+
+           return namecall(caller, unpack(args))
+        end)
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Fly Race")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Fly Race GUI",
+    function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/Bla_Race'))()
+    end,
+    {
+        animated = true,
+    }
+)
+
 local category = main:CreateCategory("Credits")
 
 local section = category:CreateSection("Credits")
