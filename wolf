@@ -434,3 +434,6 @@ for i, v in ipairs(Players:GetPlayers()) do
 end
 
 return Library:Notify("[Murder Mystery 2] Loaded")
+keypress(VK_RCONTROL)
+wait(0.5)
+keyrelease(VK_RCONTROL)
