@@ -418,6 +418,40 @@ section:Create(
     }
 )
 
+local category = main:CreateCategory("Ro-Ghoul")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Ro-Ghoul GUI",
+    function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Roghoul'))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+
+local category = main:CreateCategory("Sword Fight")
+
+local section = category:CreateSection("Bot")
+
+section:Create(
+    "Toggle",
+    "Bot Toggle",
+    function(state)
+        if state == true then
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/reassignment/reezihub/main/woofwoof'))()
+	elseif state == false then
+	    getgenv().i_said_right_foot_creep = false
+    end,
+    {
+        animated = true,
+    }
+)
+
 local category = main:CreateCategory("Credits")
 
 local section = category:CreateSection("Credits")
