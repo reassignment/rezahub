@@ -15,18 +15,7 @@ section:Create(
     "Button",
     "GUI (New)",
     function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader'))()
-    end,
-    {
-        animated = true,
-    }
-)
-
-section:Create(
-    "Button",
-    "GUI (Old)",
-    function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Cesare0328/my-scripts/main/bfbelifarm', true))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/bloxfruit17.3'))()
     end,
     {
         animated = true,
