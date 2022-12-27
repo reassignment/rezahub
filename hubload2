@@ -436,7 +436,7 @@ section:Create(
 
 local category = main:CreateCategory("Sword Fight")
 
-local section = category:CreateSection("Bot")
+local section = category:CreateSection("Bot (Very Buggy Do Not Use XD)")
 
 section:Create(
     "Toggle",
