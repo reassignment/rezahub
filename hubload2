@@ -180,9 +180,6 @@ section:Create(
     "Murder Mystery GUI",
     function()
     	loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/reezihub/main/wolf"))()
-	wait(0.5)
-        keypress(VK_RCONTROL)
-        keyrelease(VK_RCONTROL)
     end,
     {
         animated = true,
