@@ -446,6 +446,7 @@ section:Create(
 	    loadstring(game:HttpGet('https://raw.githubusercontent.com/reassignment/reezihub/main/woofwoof'))()
 	elseif state == false then
 	    getgenv().i_said_right_foot_creep = false
+	end
     end,
     {
         animated = true,
