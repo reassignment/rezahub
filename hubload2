@@ -181,8 +181,8 @@ section:Create(
     function()
     	loadstring(game:HttpGet("https://raw.githubusercontent.com/reassignment/reezihub/main/wolf"))()
 	wait(0.5)
-        keypress(VK_CONTROL)
-        keyrelease(VK_CONTROL)
+        keypress(VK_RCONTROL)
+        keyrelease(VK_RCONTROL)
     end,
     {
         animated = true,
