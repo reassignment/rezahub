@@ -488,6 +488,17 @@ section:Create(
     }
 )
 
+section:Create(
+    "Button",
+    "Booga Booga",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseOnGithub/scripts/main/bb2019.lua",true))()
+    end,
+    {
+        animated = true,
+    }
+)
+
 local category = main:CreateCategory("Credits")
 
 local section = category:CreateSection("Credits")
