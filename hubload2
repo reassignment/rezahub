@@ -50,6 +50,21 @@ section:Create(
     }
 )
 
+local category = main:CreateCategory("Pet Sim X")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Pet Sim X GUI",
+    function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/CATS-or-Pet-Simulator-X!-Pasta-v2-6841"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
 local category = main:CreateCategory("Arsenal")
 
 local section = category:CreateSection("GUIs")
@@ -490,7 +505,7 @@ section:Create(
 
 local category = main:CreateCategory("Booga Booga")
 
-local section = category:CreateSection("GUI")
+local section = category:CreateSection("GUIs")
 
 section:Create(
     "Button",
