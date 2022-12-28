@@ -488,6 +488,10 @@ section:Create(
     }
 )
 
+local category = main:CreateCategory("Booga Booga")
+
+local section = category:CreateSection("GUI")
+
 section:Create(
     "Button",
     "Booga Booga",
