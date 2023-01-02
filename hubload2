@@ -65,6 +65,21 @@ section:Create(
     }
 )
 
+local category = main:CreateCategory("Bee Swarm Simulator")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Bee Swarm Simulator GUI",
+    function()
+        loadstring(game:HttpGet("https://roblox.servegame.com/roblox_bss/chocmoc.lua"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
 local category = main:CreateCategory("Arsenal")
 
 local section = category:CreateSection("GUIs")
