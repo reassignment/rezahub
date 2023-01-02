@@ -533,6 +533,21 @@ section:Create(
     }
 )
 
+local category = main:CreateCategory("RoCitizens")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "RoCitizens GUI",
+    function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/XdDMJV64'))()
+    end,
+    {
+        animated = true,
+    }
+)
+
 local category = main:CreateCategory("Credits")
 
 local section = category:CreateSection("Credits")
