@@ -175,6 +175,36 @@ section:Create(
     }
 )
 
+section:Create(
+    "Button",
+    "Upgrade Trainer Stats",
+    function(state)
+    	game:GetService("ReplicatedStorage").Events.RemoteFunction:InvokeServer(table.unpack({
+        	[1] = "Stats",
+        	[2] = "MakeChanges",
+        	[3] = {
+            		["Speed"] = 1,
+            		["Accuracy"] = 1,
+            		["Range"] = 1,
+            		["Pace"] = 1,
+                },
+        }))
+    end,
+    {
+        animated = true,
+    }
+)
+
+section:Create(
+    "Button",
+    "Accept Contract",
+    function()
+        game:GetService("ReplicatedStorage").Events.RemoteFunction:InvokeServer(table.unpack({    [1] = "Divisions",    [2] = "AcceptContract",}))
+    end,
+    {
+        animated = true,
+    }
+)
 
 local category = main:CreateCategory("World // Zero")
 
