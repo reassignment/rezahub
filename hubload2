@@ -1,7 +1,7 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/teppyboy/RbxScripts/master/Misc/UI_Libraries/Zypher/Library.lua"))() 
 
 local main = library:CreateMain({
-    projName = "Reezi Hub",
+    projName = "Reza Hub",
     Resizable = true,
     MinSize = UDim2.new(0,400,0,400),
     MaxSize = UDim2.new(0,750,0,500),
