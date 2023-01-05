@@ -166,6 +166,7 @@ section:Create(
 			game:GetService("ReplicatedStorage").Events.RemoteEvent:FireServer(table.unpack({    [1] = "Football",    [2] = "RewardPlayer",    [3] = false,    [4] = 135,    [5] = workspace.Goals.Left.Destinations["1"].Left,    [6] = 21,    [7] = 1,}))
 	elseif state == false then
 		getgenv().autoPerfect = false;
+	end
     end,
     {
         animated = true,
