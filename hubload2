@@ -156,7 +156,7 @@ local category = main:CreateCategory("Goal Simulator")
 local section = category:CreateSection("Effects")
 
 section:Create(
-    "Button",
+    "Toggle",
     "Perfect Score",
     function(state)
     	if state == true then
