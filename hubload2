@@ -670,6 +670,41 @@ section:Create(
     }
 )
 
+local category = main:CreateCategory("Sword Slasher")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Sword Slasher GUI",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0swordslasher", true))()
+    end,
+    {
+        animated = true,
+    }
+)
+
+local category = main:CreateCategory("Universal")
+
+local section = category:CreateSection("Universal")
+
+section:Create(
+    "Button",
+    "AntiAFK",
+    function()
+        local vu = game:GetService("VirtualUser")
+        game:GetService("Players").LocalPlayer.Idled:connect(function()
+           vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+           wait(1)
+           vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+        end)
+    end,
+    {
+        animated = true,
+    }
+)
+
 local category = main:CreateCategory("Credits")
 
 local section = category:CreateSection("Credits")
