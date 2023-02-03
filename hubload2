@@ -85,6 +85,21 @@ section:Create(
     }
 )
 
+local category = main:CreateCategory("Pls Donate")
+
+local section = category:CreateSection("GUIs")
+
+section:Create(
+    "Button",
+    "Pls Donate GUI",
+    function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/autofarm"))()
+    end,
+    {
+        animated = true,
+    }
+)
+
 local category = main:CreateCategory("Bee Swarm Simulator")
 
 local section = category:CreateSection("GUIs")
