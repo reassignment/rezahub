@@ -78,7 +78,7 @@ section:Create(
     "Button",
     "Pet Sim X GUI",
     function()
-        loadstring(game:HttpGet('https://kidachi.xyz/loader.html', true))()
+        loadstring(game:HttpGet('https://kidachi.xyz/Script', true))()
     end,
     {
         animated = true,
